@@ -3,11 +3,11 @@ pipeline {
     environment {
             CI = 'true'
         }
-    stages {
-        stage('Stage 1') {
+   stages {
+        stage('Build') {
             steps {
-                echo 'Hello world!' 
+                sh 'npm install'
             }
         }
-    }
+   }
 }
